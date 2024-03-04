@@ -89,7 +89,11 @@ def evaluate(data_loader, model, device, attack='none', eps=0.03):
         target = target.to(device, non_blocking=True)
         bs = images.shape[0]
         i += 1
+<<<<<<< HEAD
         # if i < 438:
+=======
+        # if i < 650:
+>>>>>>> c747596ba8923fa7bdb17bd5291773ceb0a643a0
         #     continue
         if attack != 'none':
             # bad_indices = np.random.choice(bs, bs, replace=False)
@@ -102,7 +106,11 @@ def evaluate(data_loader, model, device, attack='none', eps=0.03):
             elif attack == 'noise':
                 images = noise(images)
             elif attack == 'cw':
+<<<<<<< HEAD
                 images = carlini_wagner_l2(model, images, 1000, confidence=eps, lr=0.01, max_iterations=50)
+=======
+                images = carlini_wagner_l2(model, images, 1000, confidence=eps)
+>>>>>>> c747596ba8923fa7bdb17bd5291773ceb0a643a0
             elif attack == 'spsa':
                 images = spsa(model, images, eps, 40)
                 print("here")

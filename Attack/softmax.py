@@ -44,15 +44,26 @@ class Attention(nn.Module):
         k, v = qkv.unbind(0)   # make torchscript happy (cannot use tensor as tuple)
 
         # and and self.layer==0
+<<<<<<< HEAD
         if self.robust and self.layer==0:
+=======
+        if self.robust:
+>>>>>>> c747596ba8923fa7bdb17bd5291773ceb0a643a0
             l = torch.zeros((B,self.num_heads,N,C // self.num_heads)).to(torch.device("cuda"), non_blocking=True)
             y = torch.zeros((B,self.num_heads,N,C // self.num_heads)).to(torch.device("cuda"), non_blocking=True)
 
             # mu=N*C/8/k.mean(dim=[0,1]).norm(p=1)
+<<<<<<< HEAD
             lambd = 4
             mu=N*C/4/k.norm(p=1,dim=[-1,-2],keepdim=True)
 
             for i in range(0,5):
+=======
+            lambd = 3
+            mu=N*C/4/k.norm(p=1,dim=[-1,-2],keepdim=True)
+
+            for i in range(0,1):
+>>>>>>> c747596ba8923fa7bdb17bd5291773ceb0a643a0
                 s = k-l+y/mu
                 # s = F.softshrink(input=s,lambd=mu.item())
                 s_less = s.le(-lambd*mu).int()
