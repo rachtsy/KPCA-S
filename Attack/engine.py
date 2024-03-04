@@ -89,16 +89,6 @@ def evaluate(data_loader, model, device, attack='none', eps=0.03):
         target = target.to(device, non_blocking=True)
         bs = images.shape[0]
         i += 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-        # if i < 438:
-=======
-        # if i < 650:
->>>>>>> c747596ba8923fa7bdb17bd5291773ceb0a643a0
-=======
-        # if i < 438:
->>>>>>> 821ff6729ffcf795ed9fdfb1e72e2f2cf4bca3ca
-        #     continue
         if attack != 'none':
             # bad_indices = np.random.choice(bs, bs, replace=False)
             if attack == 'fgm':
@@ -110,15 +100,7 @@ def evaluate(data_loader, model, device, attack='none', eps=0.03):
             elif attack == 'noise':
                 images = noise(images)
             elif attack == 'cw':
-<<<<<<< HEAD
-<<<<<<< HEAD
                 images = carlini_wagner_l2(model, images, 1000, confidence=eps, lr=0.01, max_iterations=50)
-=======
-                images = carlini_wagner_l2(model, images, 1000, confidence=eps)
->>>>>>> c747596ba8923fa7bdb17bd5291773ceb0a643a0
-=======
-                images = carlini_wagner_l2(model, images, 1000, confidence=eps, lr=0.01, max_iterations=50)
->>>>>>> 821ff6729ffcf795ed9fdfb1e72e2f2cf4bca3ca
             elif attack == 'spsa':
                 images = spsa(model, images, eps, 40)
                 print("here")
@@ -145,7 +127,3 @@ def evaluate(data_loader, model, device, attack='none', eps=0.03):
           .format(top1=metric_logger.acc1, top5=metric_logger.acc5, losses=metric_logger.loss))
 
     return {k: meter.global_avg for k, meter in metric_logger.meters.items()}
-<<<<<<< HEAD
-=======
-
->>>>>>> 821ff6729ffcf795ed9fdfb1e72e2f2cf4bca3ca
