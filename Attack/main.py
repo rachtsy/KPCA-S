@@ -474,18 +474,8 @@ def main(args):
             print("Corruption Top1 accuracy {0:.2f}, mCE: {1:.2f}".format(overall_acc, mCE * 100.))
         
         if args.output_dir and utils.is_main_process():
-<<<<<<< HEAD
             # eps = str(args.eps)
             eps = str(round(float(args.eps)*255))
-            eps = str(args.eps)
-=======
-<<<<<<< HEAD
-            # eps = str(args.eps)
-            eps = str(round(float(args.eps)*255))
-=======
-            eps = str(args.eps)
->>>>>>> c747596ba8923fa7bdb17bd5291773ceb0a643a0
->>>>>>> 821ff6729ffcf795ed9fdfb1e72e2f2cf4bca3ca
             with (output_dir / f"{args.job_name}_{args.attack}_{eps}.txt").open("a") as f:
                 f.write(json.dumps(test_stats) + "\n")
         print(f"Accuracy of the network on the {len(dataset_val)} test images: {test_stats['acc1']:.1f}%")
@@ -558,7 +548,3 @@ if __name__ == '__main__':
     if args.output_dir:
         Path(args.output_dir).mkdir(parents=True, exist_ok=True)
     main(args)
-<<<<<<< HEAD
-=======
-
->>>>>>> 821ff6729ffcf795ed9fdfb1e72e2f2cf4bca3ca
