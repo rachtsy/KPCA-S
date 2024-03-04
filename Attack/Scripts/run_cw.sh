@@ -11,11 +11,7 @@ batchsize=48
 #      CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 python -m torch.distributed.launch --nproc_per_node=8 --master_port=$port_num --use_env main.py --model deit_kde_tiny_patch16_224 --batch-size $batchsize --data-path /mnt/d64c1162-08cc-4571-90a3-04c60b6f6f66/xing/imagenet/imagenet --output_dir /home/xing/robust_transformer/imagenet/files_kde --use_wandb 1 --project_name 'robust' --job_name cw_kde_eval --attack 'cw' --eps $i --finetune /home/xing/robust_transformer/imagenet/files_kde/checkpoint.pth --eval 1
 # done
 
-<<<<<<< HEAD
-for i in {1..1}
-=======
 for i in {1..6}
->>>>>>> c747596ba8923fa7bdb17bd5291773ceb0a643a0
   do
      (( count++ ))
      port_num=`expr $count + $offset`
