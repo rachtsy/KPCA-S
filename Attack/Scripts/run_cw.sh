@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 821ff6729ffcf795ed9fdfb1e72e2f2cf4bca3ca
 #!/bin/bash
 
 count=0
