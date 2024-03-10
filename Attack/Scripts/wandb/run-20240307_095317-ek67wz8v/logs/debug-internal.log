@@ -1,0 +1,21 @@
+2024-03-07 09:53:17,228 INFO    StreamThr :62692 [internal.py:wandb_internal():86] W&B internal server running at pid: 62692, started at: 2024-03-07 09:53:17.227703
+2024-03-07 09:53:17,231 DEBUG   HandlerThread:62692 [handler.py:handle_request():146] handle_request: status
+2024-03-07 09:53:17,233 INFO    WriterThread:62692 [datastore.py:open_for_write():87] open: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240307_095317-ek67wz8v/run-ek67wz8v.wandb
+2024-03-07 09:53:17,236 DEBUG   SenderThread:62692 [sender.py:send():382] send: header
+2024-03-07 09:53:17,278 DEBUG   SenderThread:62692 [sender.py:send():382] send: run
+2024-03-07 09:53:18,128 INFO    SenderThread:62692 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240307_095317-ek67wz8v/files
+2024-03-07 09:53:18,128 INFO    SenderThread:62692 [sender.py:_start_run_threads():1136] run started: ek67wz8v with start time 1709805197.227684
+2024-03-07 09:53:18,154 DEBUG   HandlerThread:62692 [handler.py:handle_request():146] handle_request: check_version
+2024-03-07 09:53:18,155 DEBUG   SenderThread:62692 [sender.py:send_request():409] send_request: check_version
+2024-03-07 09:53:18,812 DEBUG   HandlerThread:62692 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-07 09:53:18,812 INFO    HandlerThread:62692 [handler.py:finish():869] shutting down handler
+2024-03-07 09:53:19,155 INFO    WriterThread:62692 [datastore.py:close():296] close: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240307_095317-ek67wz8v/run-ek67wz8v.wandb
+2024-03-07 09:53:19,423 INFO    SenderThread:62692 [sender.py:finish():1572] shutting down sender
+2024-03-07 09:53:19,424 INFO    SenderThread:62692 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-07 09:53:20,129 INFO    SenderThread:62692 [dir_watcher.py:finish():388] scan: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240307_095317-ek67wz8v/files
+2024-03-07 09:53:20,130 INFO    SenderThread:62692 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240307_095317-ek67wz8v/files/config.yaml config.yaml
+2024-03-07 09:53:20,130 INFO    SenderThread:62692 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-07 09:53:20,130 INFO    SenderThread:62692 [file_pusher.py:join():178] waiting for file pusher
+2024-03-07 09:53:21,760 INFO    wandb-upload_0:62692 [upload_job.py:push():131] Uploaded file /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240307_095317-ek67wz8v/files/config.yaml
+2024-03-07 09:53:22,133 INFO    SenderThread:62692 [file_stream.py:finish():595] file stream finish called
+2024-03-07 09:53:22,613 INFO    SenderThread:62692 [file_stream.py:finish():599] file stream finish is done

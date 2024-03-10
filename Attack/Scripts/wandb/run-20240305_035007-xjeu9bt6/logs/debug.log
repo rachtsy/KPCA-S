@@ -1,0 +1,28 @@
+2024-03-05 03:50:07,204 INFO    MainThread:1032 [wandb_setup.py:_flush():76] Current SDK version is 0.16.3
+2024-03-05 03:50:07,205 INFO    MainThread:1032 [wandb_setup.py:_flush():76] Configure stats pid to 1032
+2024-03-05 03:50:07,205 INFO    MainThread:1032 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/.config/wandb/settings
+2024-03-05 03:50:07,205 INFO    MainThread:1032 [wandb_setup.py:_flush():76] Loading settings from /home/ubuntu/Kpca/Attack/Scripts/wandb/settings
+2024-03-05 03:50:07,205 INFO    MainThread:1032 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'api_key': '***REDACTED***'}
+2024-03-05 03:50:07,205 INFO    MainThread:1032 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-03-05 03:50:07,205 INFO    MainThread:1032 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'Attack/main.py', 'program_abspath': '/home/ubuntu/Kpca/Attack/main.py', 'program': '/home/ubuntu/Kpca/Attack/main.py'}
+2024-03-05 03:50:07,205 INFO    MainThread:1032 [wandb_init.py:_log_setup():526] Logging user logs to /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_035007-xjeu9bt6/logs/debug.log
+2024-03-05 03:50:07,205 INFO    MainThread:1032 [wandb_init.py:_log_setup():527] Logging internal logs to /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_035007-xjeu9bt6/logs/debug-internal.log
+2024-03-05 03:50:07,205 INFO    MainThread:1032 [wandb_init.py:init():566] calling init triggers
+2024-03-05 03:50:07,205 INFO    MainThread:1032 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2024-03-05 03:50:07,206 INFO    MainThread:1032 [wandb_init.py:init():616] starting backend
+2024-03-05 03:50:07,206 INFO    MainThread:1032 [wandb_init.py:init():620] setting up manager
+2024-03-05 03:50:07,208 INFO    MainThread:1032 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-03-05 03:50:07,210 INFO    MainThread:1032 [wandb_init.py:init():628] backend started and connected
+2024-03-05 03:50:07,215 INFO    MainThread:1032 [wandb_init.py:init():720] updated telemetry
+2024-03-05 03:50:07,256 INFO    MainThread:1032 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-03-05 03:50:08,592 INFO    MainThread:1032 [wandb_run.py:_on_init():2262] communicating current version
+2024-03-05 03:50:09,334 INFO    MainThread:1032 [wandb_run.py:_on_init():2271] got version response 
+2024-03-05 03:50:09,334 INFO    MainThread:1032 [wandb_init.py:init():804] starting run threads in backend
+2024-03-05 03:50:17,049 INFO    MainThread:1032 [wandb_run.py:_console_start():2241] atexit reg
+2024-03-05 03:50:17,049 INFO    MainThread:1032 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2024-03-05 03:50:17,050 INFO    MainThread:1032 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2024-03-05 03:50:17,050 INFO    MainThread:1032 [wandb_run.py:_redirect():2186] Redirects installed.
+2024-03-05 03:50:17,051 INFO    MainThread:1032 [wandb_init.py:init():847] run started, returning control to user process
+2024-03-05 03:50:17,054 INFO    MainThread:1032 [wandb_run.py:_config_callback():1343] config_cb None None {'batch_size': 48, 'epochs': 300, 'huber_a': 0.2, 'loss_type': 'huber', 'num_iter_kirwls': 1, 'outlier_fraction': 0.1, 'num_blocks': 5, 'model': 'deit_tiny_patch16_224', 'input_size': 224, 'drop': 0.0, 'drop_path': 0.1, 'model_ema': True, 'model_ema_decay': 0.99996, 'model_ema_force_cpu': False, 'opt': 'adamw', 'opt_eps': 1e-08, 'opt_betas': None, 'clip_grad': None, 'momentum': 0.9, 'weight_decay': 0.05, 'sched': 'cosine', 'lr': 0.0005, 'lr_noise': None, 'lr_noise_pct': 0.67, 'lr_noise_std': 1.0, 'warmup_lr': 1e-06, 'min_lr': 1e-05, 'decay_epochs': 30, 'warmup_epochs': 5, 'cooldown_epochs': 10, 'patience_epochs': 10, 'decay_rate': 0.1, 'color_jitter': 0.4, 'aa': 'rand-m9-mstd0.5-inc1', 'smoothing': 0.1, 'train_interpolation': 'bicubic', 'repeated_aug': True, 'reprob': 0.25, 'remode': 'pixel', 'recount': 1, 'resplit': False, 'mixup': 0.8, 'cutmix': 1.0, 'cutmix_minmax': None, 'mixup_prob': 1.0, 'mixup_switch_prob': 0.5, 'mixup_mode': 'batch', 'teacher_model': 'regnety_160', 'teacher_path': '', 'distillation_type': 'none', 'distillation_alpha': 0.5, 'distillation_tau': 1.0, 'finetune': '/home/ubuntu/Kpca/checkpoints/rpc/sym_baseline.pth', 'data_path': '/vinai/tannhm/imagenet/', 'data_set': 'IMNET', 'inat_category': 'name', 'attack': 'cw', 'eps': 0.00784313725490196, 'output_dir': '/home/ubuntu/Kpca/checkpoints/', 'device': 'cuda', 'seed': 0, 'resume': '', 'start_epoch': 0, 'eval': '1', 'inc_path': None, 'dist_eval': False, 'num_workers': 10, 'pin_mem': True, 'world_size': 1, 'dist_url': 'env://', 'use_wandb': '1', 'project_name': 'robust_attack', 'job_name': 'sym_baseline_cw', 'kernel_size': None, 'stride': None, 'robust': False}
+2024-03-05 03:51:49,836 WARNING MsgRouterThr:1032 [router.py:message_loop():77] message_loop has been closed

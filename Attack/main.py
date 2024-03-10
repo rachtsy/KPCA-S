@@ -150,7 +150,7 @@ def get_args_parser():
     parser.add_argument('--inat-category', default='name',
                         choices=['kingdom', 'phylum', 'class', 'order', 'supercategory', 'family', 'genus', 'name'],
                         type=str, help='semantic granularity')
-    parser.add_argument('--attack', default='none', choices=['pgd', 'fgm', 'sld', 'noise', 'cw', 'spsa', 'none'],
+    parser.add_argument('--attack', default='none', choices=['pgd', 'fgm', 'sld', 'noise', 'cw', 'spsa', 'none','hsja'],
                         type=str, help='Type pf attack method.')
     parser.add_argument('--eps', default=0.03, type=float, help='Purtabation budget')
 

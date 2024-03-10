@@ -1,0 +1,17 @@
+
+| distributed init (rank 0): env://
+Traceback (most recent call last):
+  File "/home/ubuntu/Kpca/Attack/main.py", line 550, in <module>
+    main(args)
+  File "/home/ubuntu/Kpca/Attack/main.py", line 229, in main
+    dataset_val, _ = build_dataset(is_train=False, args=args)
+  File "/home/ubuntu/Kpca/Attack/datasets.py", line 63, in build_dataset
+    dataset = datasets.ImageFolder(root, transform=transform)
+  File "/home/ubuntu/.conda/envs/torch1/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 226, in __init__
+    super(ImageFolder, self).__init__(root, loader, IMG_EXTENSIONS if is_valid_file is None else None,
+  File "/home/ubuntu/.conda/envs/torch1/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 108, in __init__
+    classes, class_to_idx = self._find_classes(self.root)
+  File "/home/ubuntu/.conda/envs/torch1/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 137, in _find_classes
+    classes = [d.name for d in os.scandir(dir) if d.is_dir()]
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ubuntu/data/val'
+Namespace(aa='rand-m9-mstd0.5-inc1', attack='cw', batch_size=48, clip_grad=None, color_jitter=0.4, cooldown_epochs=10, cutmix=1.0, cutmix_minmax=None, data_path='/home/ubuntu/data/', data_set='IMNET', decay_epochs=30, decay_rate=0.1, device='cuda', dist_backend='nccl', dist_eval=False, dist_url='env://', distillation_alpha=0.5, distillation_tau=1.0, distillation_type='none', distributed=True, drop=0.0, drop_path=0.1, epochs=300, eps=0.00392156862745098, eval='1', finetune='/home/ubuntu/Kpca/checkpoints/rpc/sym_baseline.pth', gpu=0, huber_a=0.2, inat_category='name', inc_path=None, input_size=224, job_name='sym_baseline_cw', kernel_size=None, loss_type='huber', lr=0.0005, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.8, mixup_mode='batch', mixup_prob=1.0, mixup_switch_prob=0.5, model='deit_tiny_patch16_224', model_ema=True, model_ema_decay=0.99996, model_ema_force_cpu=False, momentum=0.9, num_blocks=5, num_iter_kirwls=1, num_workers=10, opt='adamw', opt_betas=None, opt_eps=1e-08, outlier_fraction=0.1, output_dir='/home/ubuntu/Kpca/checkpoints/', patience_epochs=10, pin_mem=True, project_name='robust_attack', rank=0, recount=1, remode='pixel', repeated_aug=True, reprob=0.25, resplit=False, resume='', robust=False, sched='cosine', seed=0, smoothing=0.1, start_epoch=0, stride=None, teacher_model='regnety_160', teacher_path='', train_interpolation='bicubic', use_wandb='1', warmup_epochs=5, warmup_lr=1e-06, weight_decay=0.05, world_size=4)

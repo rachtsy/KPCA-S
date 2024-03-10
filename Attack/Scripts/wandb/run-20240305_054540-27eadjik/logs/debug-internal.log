@@ -1,0 +1,335 @@
+2024-03-05 05:45:40,623 INFO    StreamThr :20404 [internal.py:wandb_internal():86] W&B internal server running at pid: 20404, started at: 2024-03-05 05:45:40.622003
+2024-03-05 05:45:40,625 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status
+2024-03-05 05:45:40,626 INFO    WriterThread:20404 [datastore.py:open_for_write():87] open: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/run-27eadjik.wandb
+2024-03-05 05:45:40,629 DEBUG   SenderThread:20404 [sender.py:send():382] send: header
+2024-03-05 05:45:40,677 DEBUG   SenderThread:20404 [sender.py:send():382] send: run
+2024-03-05 05:45:41,441 INFO    SenderThread:20404 [dir_watcher.py:__init__():211] watching files in: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files
+2024-03-05 05:45:41,441 INFO    SenderThread:20404 [sender.py:_start_run_threads():1136] run started: 27eadjik with start time 1709617540.621919
+2024-03-05 05:45:41,458 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: check_version
+2024-03-05 05:45:41,459 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: check_version
+2024-03-05 05:45:42,153 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: run_start
+2024-03-05 05:45:42,460 DEBUG   HandlerThread:20404 [system_info.py:__init__():27] System info init
+2024-03-05 05:45:42,460 DEBUG   HandlerThread:20404 [system_info.py:__init__():42] System info init done
+2024-03-05 05:45:42,460 INFO    HandlerThread:20404 [system_monitor.py:start():194] Starting system monitor
+2024-03-05 05:45:42,460 INFO    SystemMonitor:20404 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-03-05 05:45:42,462 INFO    HandlerThread:20404 [system_monitor.py:probe():214] Collecting system info
+2024-03-05 05:45:42,462 INFO    SystemMonitor:20404 [interfaces.py:start():190] Started cpu monitoring
+2024-03-05 05:45:42,463 INFO    SystemMonitor:20404 [interfaces.py:start():190] Started disk monitoring
+2024-03-05 05:45:42,464 INFO    SystemMonitor:20404 [interfaces.py:start():190] Started gpu monitoring
+2024-03-05 05:45:42,465 INFO    SystemMonitor:20404 [interfaces.py:start():190] Started memory monitoring
+2024-03-05 05:45:42,467 INFO    SystemMonitor:20404 [interfaces.py:start():190] Started network monitoring
+2024-03-05 05:45:43,200 DEBUG   HandlerThread:20404 [system_info.py:probe():151] Probing system
+2024-03-05 05:45:43,210 DEBUG   HandlerThread:20404 [system_info.py:_probe_git():136] Probing git
+2024-03-05 05:45:43,230 DEBUG   HandlerThread:20404 [system_info.py:_probe_git():144] Probing git done
+2024-03-05 05:45:43,230 DEBUG   HandlerThread:20404 [system_info.py:probe():199] Probing system done
+2024-03-05 05:45:43,230 DEBUG   HandlerThread:20404 [system_monitor.py:probe():223] {'os': 'Linux-4.15.0-171-generic-x86_64-with-glibc2.17', 'python': '3.8.18', 'heartbeatAt': '2024-03-05T05:45:43.200890', 'startedAt': '2024-03-05T05:45:40.613503', 'docker': None, 'cuda': None, 'args': ('--model', 'deit_tiny_patch16_224', '--batch-size', '48', '--data-path', '/vinai/tannhm/imagenet/', '--output_dir', '/home/ubuntu/Kpca/checkpoints/', '--use_wandb', '1', '--project_name', 'robust_attack', '--job_name', 'sym_baseline_cw', '--attack', 'none', '--eps', '0.00784313725490196', '--finetune', '/home/ubuntu/Kpca/checkpoints/rpc/sym_baseline.pth', '--eval', '1'), 'state': 'running', 'program': '/home/ubuntu/Kpca/Attack/main.py', 'codePathLocal': None, 'codePath': 'Attack/main.py', 'git': {'remote': 'https://github.com/rachtsy/KPCA-S.git', 'commit': 'af122c40f28216fdf0d074e1deec2ca54889040d'}, 'email': 'e0235225@u.nus.edu', 'root': '/home/ubuntu/Kpca', 'host': 'c1d0991b221b', 'username': 'ubuntu', 'executable': '/home/ubuntu/.conda/envs/torch1/bin/python', 'cpu_count': 40, 'cpu_count_logical': 80, 'cpu_freq': {'current': 2693.513937500001, 'min': 1200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 2693.891, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.889, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2687.782, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2687.743, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.889, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2687.782, 'min': 1200.0, 'max': 3600.0}, {'current': 2687.812, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.889, 'min': 1200.0, 'max': 3600.0}, {'current': 2687.729, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.851, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.889, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.889, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.906, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.884, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.871, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.956, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.816, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.922, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.957, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.878, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.892, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.856, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.057, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2680.343, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.881, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2699.236, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2687.809, 'min': 1200.0, 'max': 3600.0}, {'current': 2687.809, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.89, 'min': 1200.0, 'max': 3600.0}, {'current': 2678.43, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.833, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2700.159, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.819, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.906, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.886, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.889, 'min': 1200.0, 'max': 3600.0}, {'current': 2692.716, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.887, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.015, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.147, 'min': 1200.0, 'max': 3600.0}, {'current': 2696.278, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.85, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.876, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.86, 'min': 1200.0, 'max': 3600.0}, {'current': 2694.056, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.889, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.952, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.775, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.888, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.971, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.921, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.89, 'min': 1200.0, 'max': 3600.0}, {'current': 2693.893, 'min': 1200.0, 'max': 3600.0}], 'disk': {'/': {'total': 7094.488353729248, 'used': 6419.27375793457}}, 'gpu': 'Tesla V100-SXM2-32GB-LS', 'gpu_count': 8, 'gpu_devices': [{'name': 'Tesla V100-SXM2-32GB-LS', 'memory_total': 34089730048}, {'name': 'Tesla V100-SXM2-32GB-LS', 'memory_total': 34089730048}, {'name': 'Tesla V100-SXM2-32GB-LS', 'memory_total': 34089730048}, {'name': 'Tesla V100-SXM2-32GB-LS', 'memory_total': 34089730048}, {'name': 'Tesla V100-SXM2-32GB-LS', 'memory_total': 34089730048}, {'name': 'Tesla V100-SXM2-32GB-LS', 'memory_total': 34089730048}, {'name': 'Tesla V100-SXM2-32GB-LS', 'memory_total': 34089730048}, {'name': 'Tesla V100-SXM2-32GB-LS', 'memory_total': 34089730048}], 'memory': {'total': 503.7897186279297}}
+2024-03-05 05:45:43,230 INFO    HandlerThread:20404 [system_monitor.py:probe():224] Finished collecting system info
+2024-03-05 05:45:43,230 INFO    HandlerThread:20404 [system_monitor.py:probe():227] Publishing system info
+2024-03-05 05:45:43,231 DEBUG   HandlerThread:20404 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2024-03-05 05:45:43,445 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/conda-environment.yaml
+2024-03-05 05:45:47,005 DEBUG   HandlerThread:20404 [system_info.py:_save_conda():220] Saving conda packages done
+2024-03-05 05:45:47,008 INFO    HandlerThread:20404 [system_monitor.py:probe():229] Finished publishing system info
+2024-03-05 05:45:47,011 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:45:47,013 DEBUG   SenderThread:20404 [sender.py:send():382] send: files
+2024-03-05 05:45:47,013 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-03-05 05:45:47,022 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: python_packages
+2024-03-05 05:45:47,022 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: python_packages
+2024-03-05 05:45:47,024 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-05 05:45:47,025 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: stop_status
+2024-03-05 05:45:47,030 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-05 05:45:47,444 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/conda-environment.yaml
+2024-03-05 05:45:47,444 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-metadata.json
+2024-03-05 05:45:47,444 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/requirements.txt
+2024-03-05 05:45:47,594 DEBUG   SenderThread:20404 [sender.py:send():382] send: telemetry
+2024-03-05 05:45:47,594 DEBUG   SenderThread:20404 [sender.py:send():382] send: telemetry
+2024-03-05 05:45:47,595 DEBUG   SenderThread:20404 [sender.py:send():382] send: run
+2024-03-05 05:45:47,882 INFO    SenderThread:20404 [sender.py:send_run():1010] updated run: 27eadjik
+2024-03-05 05:45:47,882 DEBUG   SenderThread:20404 [sender.py:send():382] send: config
+2024-03-05 05:45:48,078 INFO    wandb-upload_0:20404 [upload_job.py:push():131] Uploaded file /tmp/tmpiovkg3k0wandb/9m7ja6d7-wandb-metadata.json
+2024-03-05 05:45:48,444 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/config.yaml
+2024-03-05 05:45:51,689 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:45:52,446 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/output.log
+2024-03-05 05:45:54,447 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/output.log
+2024-03-05 05:45:56,690 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:46:01,691 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:46:02,025 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-05 05:46:02,025 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-05 05:46:02,026 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: stop_status
+2024-03-05 05:46:07,367 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:46:12,377 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:46:13,457 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/config.yaml
+2024-03-05 05:46:17,105 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-05 05:46:17,105 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: stop_status
+2024-03-05 05:46:17,146 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-05 05:46:18,433 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:46:23,434 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:46:28,436 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:46:32,024 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-05 05:46:32,025 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: stop_status
+2024-03-05 05:46:32,101 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-05 05:46:34,325 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:46:39,326 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:46:42,467 DEBUG   SystemMonitor:20404 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-03-05 05:46:42,473 DEBUG   SenderThread:20404 [sender.py:send():382] send: stats
+2024-03-05 05:46:44,475 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:46:47,024 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-05 05:46:47,025 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: stop_status
+2024-03-05 05:46:47,101 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-05 05:46:50,314 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:46:52,359 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:46:52,361 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:46:52,362 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:46:52,362 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:46:52,483 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_created():271] file/dir created: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json
+2024-03-05 05:46:53,242 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:46:53,243 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:46:53,244 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:46:53,247 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:46:53,483 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json
+2024-03-05 05:46:56,248 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:47:01,248 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:47:02,025 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-05 05:47:02,025 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: stop_status
+2024-03-05 05:47:02,101 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-05 05:47:03,355 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:03,356 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:03,356 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:03,359 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:03,425 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:03,427 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:03,427 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:03,427 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:03,489 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json
+2024-03-05 05:47:03,495 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:03,496 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:03,497 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:03,497 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:03,566 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:03,567 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:03,567 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:03,568 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:03,637 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:03,638 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:03,638 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:03,639 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:03,707 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:03,708 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:03,709 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:03,709 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:03,778 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:03,779 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:03,779 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:03,779 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:03,849 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:03,850 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:03,851 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:03,852 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:04,490 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json
+2024-03-05 05:47:06,853 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:47:11,854 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:47:12,475 DEBUG   SenderThread:20404 [sender.py:send():382] send: stats
+2024-03-05 05:47:17,025 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-05 05:47:17,025 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: stop_status
+2024-03-05 05:47:17,032 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:17,101 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-05 05:47:17,281 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:17,281 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:47:17,282 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:17,285 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:17,498 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json
+2024-03-05 05:47:20,997 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:20,999 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:20,999 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:20,999 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:21,500 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json
+2024-03-05 05:47:23,000 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:47:28,001 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:47:31,730 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:31,731 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:31,731 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:31,732 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:31,800 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:31,801 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:31,801 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:31,801 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:31,870 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:31,871 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:31,872 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:31,872 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:31,941 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:31,942 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:31,942 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:31,943 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:32,011 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:32,012 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:32,012 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:32,013 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:32,024 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: stop_status
+2024-03-05 05:47:32,025 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: stop_status
+2024-03-05 05:47:32,084 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:32,101 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-05 05:47:32,355 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:32,355 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:32,356 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:32,506 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json
+2024-03-05 05:47:33,357 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:47:35,138 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:35,139 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:35,140 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:35,140 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:35,209 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: partial_history
+2024-03-05 05:47:35,210 DEBUG   SenderThread:20404 [sender.py:send():382] send: history
+2024-03-05 05:47:35,210 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: summary_record
+2024-03-05 05:47:35,211 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:35,508 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json
+2024-03-05 05:47:39,212 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:47:39,379 DEBUG   SenderThread:20404 [sender.py:send():382] send: exit
+2024-03-05 05:47:39,379 INFO    SenderThread:20404 [sender.py:send_exit():589] handling exit code: 255
+2024-03-05 05:47:39,379 INFO    SenderThread:20404 [sender.py:send_exit():591] handling runtime: 117
+2024-03-05 05:47:39,380 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:39,380 INFO    SenderThread:20404 [sender.py:send_exit():597] send defer
+2024-03-05 05:47:39,380 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:39,381 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 0
+2024-03-05 05:47:39,381 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:39,381 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-03-05 05:47:39,381 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 1
+2024-03-05 05:47:39,381 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:39,381 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 1
+2024-03-05 05:47:39,382 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:39,382 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-03-05 05:47:39,382 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 2
+2024-03-05 05:47:39,382 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:39,382 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 2
+2024-03-05 05:47:39,382 INFO    HandlerThread:20404 [system_monitor.py:finish():203] Stopping system monitor
+2024-03-05 05:47:39,382 DEBUG   SystemMonitor:20404 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-03-05 05:47:39,383 DEBUG   SystemMonitor:20404 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-03-05 05:47:39,384 INFO    HandlerThread:20404 [interfaces.py:finish():202] Joined cpu monitor
+2024-03-05 05:47:39,388 INFO    HandlerThread:20404 [interfaces.py:finish():202] Joined disk monitor
+2024-03-05 05:47:39,510 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json
+2024-03-05 05:47:42,187 INFO    HandlerThread:20404 [interfaces.py:finish():202] Joined gpu monitor
+2024-03-05 05:47:42,188 INFO    HandlerThread:20404 [interfaces.py:finish():202] Joined memory monitor
+2024-03-05 05:47:42,188 INFO    HandlerThread:20404 [interfaces.py:finish():202] Joined network monitor
+2024-03-05 05:47:42,188 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-05 05:47:42,189 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:42,189 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-03-05 05:47:42,189 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 3
+2024-03-05 05:47:42,189 DEBUG   SenderThread:20404 [sender.py:send():382] send: stats
+2024-03-05 05:47:42,189 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:42,191 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-05 05:47:42,193 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 3
+2024-03-05 05:47:42,194 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:42,194 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-03-05 05:47:42,194 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 4
+2024-03-05 05:47:42,195 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:42,195 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 4
+2024-03-05 05:47:42,195 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:42,195 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-03-05 05:47:42,195 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 5
+2024-03-05 05:47:42,196 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:42,196 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 5
+2024-03-05 05:47:42,196 DEBUG   SenderThread:20404 [sender.py:send():382] send: summary
+2024-03-05 05:47:42,197 INFO    SenderThread:20404 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-03-05 05:47:42,197 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:42,197 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-03-05 05:47:42,197 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 6
+2024-03-05 05:47:42,197 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:42,197 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 6
+2024-03-05 05:47:42,198 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:42,198 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-03-05 05:47:42,198 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 7
+2024-03-05 05:47:42,198 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: status_report
+2024-03-05 05:47:42,198 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:42,198 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 7
+2024-03-05 05:47:42,199 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:42,199 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-03-05 05:47:42,379 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-05 05:47:42,511 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json
+2024-03-05 05:47:43,794 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 8
+2024-03-05 05:47:43,794 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-05 05:47:43,795 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:43,795 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 8
+2024-03-05 05:47:43,795 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:43,795 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-03-05 05:47:43,796 INFO    SenderThread:20404 [job_builder.py:build():296] Attempting to build job artifact
+2024-03-05 05:47:43,798 INFO    SenderThread:20404 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-03-05 05:47:43,848 INFO    SenderThread:20404 [job_builder.py:build():402] adding wandb-job metadata file
+2024-03-05 05:47:43,854 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 9
+2024-03-05 05:47:43,855 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:43,855 DEBUG   SenderThread:20404 [sender.py:send():382] send: artifact
+2024-03-05 05:47:43,855 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 9
+2024-03-05 05:47:44,380 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-05 05:47:44,513 INFO    Thread-12 :20404 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/output.log
+2024-03-05 05:47:45,111 INFO    SenderThread:20404 [sender.py:send_artifact():1494] sent artifact job-https___github.com_rachtsy_KPCA-S.git_Attack_main.py - {'id': 'QXJ0aWZhY3Q6NzM5OTAzNDUx', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE0NTExODQzMQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NzM5OTAzNDUx', 'versionIndex': 3}}}
+2024-03-05 05:47:45,111 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:45,112 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-03-05 05:47:45,112 INFO    SenderThread:20404 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-03-05 05:47:45,514 INFO    SenderThread:20404 [dir_watcher.py:finish():388] scan: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files
+2024-03-05 05:47:45,515 INFO    SenderThread:20404 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/requirements.txt requirements.txt
+2024-03-05 05:47:45,515 INFO    SenderThread:20404 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-metadata.json wandb-metadata.json
+2024-03-05 05:47:45,515 INFO    SenderThread:20404 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/output.log output.log
+2024-03-05 05:47:45,516 INFO    SenderThread:20404 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/config.yaml config.yaml
+2024-03-05 05:47:45,521 INFO    SenderThread:20404 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/conda-environment.yaml conda-environment.yaml
+2024-03-05 05:47:45,531 INFO    SenderThread:20404 [dir_watcher.py:finish():402] scan save: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json wandb-summary.json
+2024-03-05 05:47:45,532 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 10
+2024-03-05 05:47:45,532 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-05 05:47:45,533 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:45,533 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 10
+2024-03-05 05:47:45,538 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:45,538 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-03-05 05:47:45,538 INFO    SenderThread:20404 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-05 05:47:46,046 INFO    wandb-upload_0:20404 [upload_job.py:push():131] Uploaded file /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/requirements.txt
+2024-03-05 05:47:46,382 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-05 05:47:46,383 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-05 05:47:46,624 INFO    wandb-upload_3:20404 [upload_job.py:push():131] Uploaded file /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/conda-environment.yaml
+2024-03-05 05:47:46,722 INFO    wandb-upload_4:20404 [upload_job.py:push():131] Uploaded file /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/wandb-summary.json
+2024-03-05 05:47:46,963 INFO    wandb-upload_1:20404 [upload_job.py:push():131] Uploaded file /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/output.log
+2024-03-05 05:47:47,252 INFO    wandb-upload_2:20404 [upload_job.py:push():131] Uploaded file /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/files/config.yaml
+2024-03-05 05:47:47,384 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-05 05:47:47,385 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-05 05:47:47,453 INFO    Thread-11 :20404 [sender.py:transition_state():617] send defer: 11
+2024-03-05 05:47:47,453 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:47,454 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 11
+2024-03-05 05:47:47,454 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:47,454 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-03-05 05:47:47,454 INFO    SenderThread:20404 [file_pusher.py:join():178] waiting for file pusher
+2024-03-05 05:47:47,455 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 12
+2024-03-05 05:47:47,455 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:47,455 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 12
+2024-03-05 05:47:47,456 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:47,456 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-03-05 05:47:47,456 INFO    SenderThread:20404 [file_stream.py:finish():595] file stream finish called
+2024-03-05 05:47:48,385 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-05 05:47:48,768 INFO    SenderThread:20404 [file_stream.py:finish():599] file stream finish is done
+2024-03-05 05:47:48,768 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 13
+2024-03-05 05:47:48,768 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-05 05:47:48,768 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:48,769 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 13
+2024-03-05 05:47:48,769 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:48,769 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-03-05 05:47:48,769 INFO    SenderThread:20404 [sender.py:transition_state():617] send defer: 14
+2024-03-05 05:47:48,770 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: defer
+2024-03-05 05:47:48,770 DEBUG   SenderThread:20404 [sender.py:send():382] send: final
+2024-03-05 05:47:48,770 INFO    HandlerThread:20404 [handler.py:handle_request_defer():172] handle defer: 14
+2024-03-05 05:47:48,770 DEBUG   SenderThread:20404 [sender.py:send():382] send: footer
+2024-03-05 05:47:48,771 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: defer
+2024-03-05 05:47:48,771 INFO    SenderThread:20404 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-03-05 05:47:48,771 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-05 05:47:48,772 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-05 05:47:48,772 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: poll_exit
+2024-03-05 05:47:48,773 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: server_info
+2024-03-05 05:47:48,773 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: get_summary
+2024-03-05 05:47:48,774 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: poll_exit
+2024-03-05 05:47:48,774 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: sampled_history
+2024-03-05 05:47:48,774 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: server_info
+2024-03-05 05:47:48,775 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: internal_messages
+2024-03-05 05:47:48,780 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: job_info
+2024-03-05 05:47:49,016 DEBUG   SenderThread:20404 [sender.py:send_request():409] send_request: job_info
+2024-03-05 05:47:49,017 INFO    MainThread:20404 [wandb_run.py:_footer_history_summary_info():3866] rendering history
+2024-03-05 05:47:49,017 INFO    MainThread:20404 [wandb_run.py:_footer_history_summary_info():3898] rendering summary
+2024-03-05 05:47:49,017 INFO    MainThread:20404 [wandb_run.py:_footer_sync_info():3825] logging synced files
+2024-03-05 05:47:49,018 DEBUG   HandlerThread:20404 [handler.py:handle_request():146] handle_request: shutdown
+2024-03-05 05:47:49,018 INFO    HandlerThread:20404 [handler.py:finish():869] shutting down handler
+2024-03-05 05:47:49,780 INFO    WriterThread:20404 [datastore.py:close():296] close: /home/ubuntu/Kpca/Attack/Scripts/wandb/run-20240305_054540-27eadjik/run-27eadjik.wandb
+2024-03-05 05:47:50,016 INFO    SenderThread:20404 [sender.py:finish():1572] shutting down sender
+2024-03-05 05:47:50,017 INFO    SenderThread:20404 [file_pusher.py:finish():172] shutting down file pusher
+2024-03-05 05:47:50,017 INFO    SenderThread:20404 [file_pusher.py:join():178] waiting for file pusher

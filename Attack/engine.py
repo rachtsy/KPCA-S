@@ -100,13 +100,13 @@ def evaluate(data_loader, model, device, attack='none', eps=0.03):
             elif attack == 'noise':
                 images = noise(images)
             elif attack == 'cw':
-                images = carlini_wagner_l2(model, images, 1000, confidence=eps, lr=0.01, max_iterations=50)
+                images = carlini_wagner_l2(model, images, 1000, confidence=eps, targeted=True, lr=0.1, max_iterations=10)
             elif attack == 'spsa':
                 images = spsa(model, images, eps, 40)
                 print("here")
             elif attack == 'hsja':
                 # can do targeted attack
-                images = hop_skip_jump_attack(model, images, np.inf)
+                images = hop_skip_jump_attack(model, images, np.inf, num_iterations=1)
         # compute output
         with torch.cuda.amp.autocast():
             with torch.no_grad():
